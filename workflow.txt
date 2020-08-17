@@ -1,0 +1,21 @@
+The link below shows you an image that explains this whole file
+https://drive.google.com/file/d/1OXkq96k1Akmn9QIcdAfYK9Jcs6x3V7TU/view?usp=sharing
+
+
+- contributors branch
+Every contributor has the right to a branch. Contributors work individually on their personal branch and merge into the dev branch if they are done with a task(You must have perfected the task at hand before merging to the dev branch)
+
+-Dev branch
+To ensure the master branch is as clean as possible, contributors work with the dev branch. Each contributor merges their code into the dev branch and NEVER into the master branch. 
+
+-Master branch
+Only approved contributors can rebase branches with the master. 
+code from the dev branch will be rebased to the master branch.
+
+Approved contributors
+1. Kamal O. Adebayo
+
+
+-Other branches
+In the future, other branches for bug fixing, legal issues... might be created. They should follow the same path as the dev branch.
+
