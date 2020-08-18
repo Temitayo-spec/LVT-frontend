@@ -1,0 +1,23 @@
+From the first sign up page(signup_0), by selecting student, user will be directed to "student_signup_0.html". That page has corresponding files in the css and js folders. User will progress to a form for students(student_signup_0.html).
+
+Every page above has corresponding files in the css and js folders.
+
+If the user chooses to be an educator, it will follow the same process.
+
+
+Changes to be made
+1. Homepage Jumbotron
+	- image
+	- height
+	- font-size and texts
+	- layout on mobile view
+
+2. Homepage body - font size
+
+3. Navbar
+	-links
+	-layout on mobile view
+4. Educator section
+	-educator_signup_0.html
+
+5. Sign up section general layout and background colors

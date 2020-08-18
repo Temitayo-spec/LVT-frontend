@@ -1,0 +1,164 @@
+#student{
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+    text-align: center;
+}
+#tutorialCodeField{
+    display: none;
+}
+#choice{
+    display: none;
+}
+.error{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 110%;
+
+}
+h1{
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #25274d;
+    text-align: center;
+}
+h3{
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 135%;
+    color: #25274d;
+    text-align: center;
+}
+h5{
+    height: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 135%;
+    color: #25274d;
+    text-align: center;
+}
+.ate{
+    margin: 1%;
+    width: 234px;
+    height: 54px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid #25274d;
+    cursor: pointer;
+    border-color: #4e529e;
+    background-color: white;
+}
+.vate{
+    margin: 0.2%;
+    width: 234px;
+    height: 54px;
+    border: 2px solid #25274d;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    outline: none;
+    background-color: white;
+    border-color: #4e529e;
+}
+h6{
+    height: 5px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #25274d;
+}
+.text-me{
+    width: 271px;
+    height: 66px;
+    font-size: 110%;
+    background: white;
+    border: 2px solid rgba(37, 39, 77, 0.22);
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+}
+p, .catalog-link{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #25274d;
+    line-height: 22px;
+    text-align: center;
+}
+.novate{
+    width: 234px;
+    height: 49px;
+    line-height: 49px;
+    text-decoration: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#25274d;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    border-color: #4e529e;
+    border: none;
+    cursor: pointer;
+}
+.ate:focus{
+ background-color: #25274d;
+ color: #fff;
+ border: none;
+}
+.vate:focus{
+    background-color: #25274d;
+    color: white;
+    color: #fff;
+ border: none;
+}
+.novate:hover{
+    background-color: #4e529e;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 480px)
+{
+    h3{
+        height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: #25274d;
+        text-align: center;
+    }
+    h5{
+        height: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: #25274d;
+        text-align: center;
+    }
+    h6{
+        height: 1px;
+    }
+    .ate{
+        margin-bottom: 5%;
+    }
+    .text-me{
+        height: 49px;
+    }
+    p, .catalog-link{
+        font-size: 97%;
+        font-weight: normal;
+    }
+}
