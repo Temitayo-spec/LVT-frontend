@@ -5,3 +5,4 @@
 #Static files
 
 #Static folders
+node_modules/*
