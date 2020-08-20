@@ -4,6 +4,7 @@
     padding: 0px;
     background: #F6F7FF;
     text-align: center;
+    margin-top: 2.6em;
 }
 .head{
     text-align: center;
@@ -13,12 +14,14 @@
 .role{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: 1.7rem !important;
     color: #25274d;
 }
-h3{
-    font-size: 25px;
-
+strong{
+  display: block;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: .4em;
 }
 .bt{
     background-color: whitesmoke;
@@ -32,11 +35,13 @@ h3{
     cursor: pointer;
     color: #25274d;
     margin: 0.5%;
+    margin-left: 2em;
+    margin-right: 2em;
 
 }
-p{
-    font-size: 14px;
-    letter-spacing: px;
+i{
+    font-size: .9rem;
+    font-style: normal;
 }
 .btn{
     background-color: whitesmoke;
@@ -66,18 +71,16 @@ p{
     text-align: center;
 }
 .bot{
-    margin: 2%;
     width: 258px;
     height: 64px;
-    padding: 10px;
     border-radius: 50px;
     outline: none;
-    box-shadow: 1px grey 0.9;
+    box-shadow: 1px grey 1;
     cursor: pointer;
     background-color: #25274d;
     border: none;
     color: white;
-    margin-top: 10%;
+    margin-top: 3em;;
     text-align: center;
 }
 .bt:focus{
@@ -94,13 +97,13 @@ p{
 /*Media Queries*/
 @media screen and (max-width: 530px)
 {
-.role{
-    font-size: 18px;
-}
+
 .btn{
     margin: 2%;
     width: 200px;
     height: 190px;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
 }
 .bt{
     margin: 2%;
