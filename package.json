@@ -1,0 +1,30 @@
+{
+  "name": "learnovate-frontend",
+  "version": "1.0.0",
+  "description": "The Frontend Code for Learnovate",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap-social": "^5.1.1",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1",
+    "font-awesome": "^4.7.0",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamaladebayo/LVT-frontend.git"
+  },
+  "keywords": [
+    "Learnovate"
+  ],
+  "author": "Kamal Adebayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamaladebayo/LVT-frontend/issues"
+  },
+  "homepage": "https://github.com/kamaladebayo/LVT-frontend#readme"
+}
