@@ -10,54 +10,60 @@
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
      <link rel="stylesheet" href="css/student_signup_1.css">
 </head>
-<body>
-    <header class="text-center mb-4"><img src="images/lv 3 1.png" alt="Learnovate Logo"></header>
+<body> 
+    <header class="text-center mb-4 mt-2 img-fluid"><img src="images/lv31.png" alt="Learnovate Logo"></header>
     <div class="container">
         <div class="row justify-content-center">
-        <div class="col-sm-7 col-12">
-            <form>
-                <div class="form-group row">
-                    <div class="col-12">
-                        <label for="firstname" class="final-form-label"> First name</label>
-                        <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First name" required>
+            <div class="col-md-7 col-11">
+                <form>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="firstname" class="final-form-label"> First name</label>
+                            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First name" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-12">
-                        <label for="lastname" class="final-form-label">Last name</label>
-                        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name" required>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="lastname" class="final-form-label">Last name</label>
+                            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-12">
-                        <label for="useremail" class="final-form-label">Email</label>
-                        <input type="email" class="form-control" name="useremail" id="useremail" placeholder="E-mail" required>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="username" class="final-form-label">User Name</label>
+                            <input type="text" class="form-control" name="username" id="username" placeholder="User name" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-12">
-                        <label for="phonenumber" class="final-form-label">Phone Number</label>
-                        <input type="phone" class="form-control" name="phonenumber" id="phonenumber" placeholder="Phone" required>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="useremail" class="final-form-label">Email</label>
+                            <input type="email" class="form-control" name="useremail" id="useremail" placeholder="E-mail" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-12">
-                        <label for="firstpassword" class="final-form-label">Password</label>
-                        <input type="password" class="form-control" name="firstpassword" id="firstpassword" placeholder="Password" required>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="phonenumber" class="final-form-label">Phone Number</label>
+                            <input type="number" class="form-control" name="phonenumber" id="phonenumber" placeholder="Phone" pattern="[0-9] {11}" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-12">
-                        <label for="secondPassword" class="final-form-label">Confirm password</label>
-                        <input type="password" class="form-control" name="secondPassword" id="secondPassword" placeholder="Confirm password" required>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="firstpassword" class="final-form-label">Password</label>
+                            <input type="password" class="form-control" name="firstpassword" id="firstpassword" placeholder="Password" required>
+                        </div>
                     </div>
-                </div>
-                <p id="error-text" class="text-center"></p>
-                <!-- Submit button -->
-                <button type="submit" class="btn col-12 col-sm-4 mt-4 float-right" onclick=" return validate();">Get Started</button>
-            </form>
-    </div>
-    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="secondPassword" class="final-form-label">Confirm password</label>
+                            <input type="password" class="form-control" name="secondPassword" id="secondPassword" placeholder="Confirm password" required>
+                        </div>
+                    </div>
+                    <p id="error-text" class="text-center"></p>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn col-12 col-sm-4 mt-2 float-right">Get Started</button>
+                </form>
+         </div>
+        </div>
     </div>
 
 

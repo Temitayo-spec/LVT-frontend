@@ -1,37 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta charset="UTF-8">
-    <title>
-       Learnovate
-    </title>
-    <link rel="stylesheet" href="css/signup_0.css">
-</head>
-<body id="contain">
-     <!--heading start-->
-    <div>
-        <header class="text-center mt-5 "><img src="images/lv31.png" class="img-fluid mt-5" alt="Learnovate Logo"></header>
-            <h3 class="role">Lets Sign you up. What's your role ?</h3>
-    </div>
-    <!--heading ends-->
-    <!--button section starts-->
-           <div class="it">
-                <button class="bt" type="button" name="button" onclick="studentClick()"><strong>Student</strong>
-                <i>For Students and readers</i>
-               </button>
-                <button class="btn" type="button" name="button" onclick="educatorClick()"><strong>Educator</strong>
-                <i>For Tutors, Tutorials and Administrators</i>
-                </button>
-                <br />
-                <br/>
-        <button class="bot" type="submit" onclick="submitChoice()">Next</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Get Started | Learnovate</title>
+        <link rel="shortcut icon" href="./images/favicon updated.jpg" type="image/x-icon">
+         <!-- Required meta tags always come first -->
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <meta charset="UTF-8">
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+         <link rel="stylesheet" href="css/signup_0.css">
+    </head>
+    <body>
+        <main>
+            <!-- Logo -->
+            
+            <span>
+                <img src="images/lv31.png" alt="Learnovate Logo" class="img-fluid logo">
+            </span>
+
+            <!-- Header Text -->
+            <header>Lets Sign you up. What's your role?</header>
+
+            <!-- Buttons -->
+            <div class="button-container">
+                <!-- Student -->
+                <div class="student-button" tabindex="1">
+                    <b>Student</b>
+                    <p>For Students and readers</p>
+                </div>
+                <!-- Educator -->
+                <div class="educator-button" tabindex="2">
+                    <b>Educator</b>
+                    <p>For Tutors, Tutorials and Administrators</p>
+                </div>
             </div>
-    <!--button section ends-->
+
+            <!-- Next Button -->
+            <button id="next-btn" tabindex="3">Next</button>
+        </main>
 
 
-    <script src="js/signup_0.js"></script>
 
-</body>
+
+
+
+        <p id="option-selected" class="d-none"></p>
+
+
+
+
+        <!-- The code above is for the purpose of the layout. This form below sends info to our servers. It won't be displayed to the user. -->
+        <div class="active-form d-none text-center bg-dark text-white mt-5">
+            <form action="" method="post">
+                <br>
+                <!-- Student -->
+                <label for="student">Student</label>
+                <input type="radio" name="useroption" id="student-active-form">
+
+                <br>
+
+                <!-- Educator -->
+                <label for="educator">Educator</label>
+                <input type="radio" name="useroption" id="educator-active-form">
+
+                <!-- Submit -->
+                <input type="submit" value="Next">
+            </form>
+        </div>
+
+
+
+
+
+
+
+        <script src="js/signup_0.js"></script>
+    </body>
 </html>

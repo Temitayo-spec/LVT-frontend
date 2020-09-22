@@ -1,164 +1,148 @@
-#student{
-    margin: 0px;
-    padding: 0px;
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    font-family: Montserrat;
 }
-.content{
+*:focus{
+    outline: none;
+}
+main{
+    padding: 1em;
+    position: relative;
+}
+span{
+    display: block;
     text-align: center;
+    margin-top: 1.5em;
 }
-#tutorialCodeField{
+.main-header{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: center;
+    color: #25274D;
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+}
+.mobile-ellipse{
+    position: sticky;
+    /* right: 2em; */
+    display: block;
+    float: right;
+    margin-bottom: 1em;
+    margin-right: 3em;
+}
+.desktop-ellipse-blue{
     display: none;
 }
-#choice{
+.desktop-ellipse-yellow{
     display: none;
 }
-.error{
-    text-align: center;
-    color: rgb(255, 0, 0);
-    font-size: 110%;
-
+@media(min-width: 600px){
+    .mobile-ellipse{
+        display: none;
+    }
+    .desktop-ellipse-blue{
+        display: inline-block;
+        position: absolute;
+        top: 25em;
+        left: 10%;
+    }
+    .desktop-ellipse-yellow{
+        display: inline-block;
+        position: absolute;
+        top: 15em;
+        right: 10%;
+    }
 }
-h1{
-    height: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+@media(min-width: 1000px){
+    .desktop-ellipse-yellow{
+        right: 25%;
+    }
+    .desktop-ellipse-blue{
+        left: 25%;
+    }
+}
+.sub-header{
     font-weight: 600;
-    font-size: 40px;
-    color: #25274d;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
     text-align: center;
+    color: #25274D;
+    margin-bottom: 0.7em;
+    clear: both;
 }
-h3{
-    height: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 135%;
-    color: #25274d;
-    text-align: center;
-}
-h5{
-    height: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 135%;
-    color: #25274d;
-    text-align: center;
-}
-.ate{
-    margin: 1%;
+.option-yes{
     width: 234px;
-    height: 54px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    outline: none;
-    border: 2px solid #25274d;
-    cursor: pointer;
-    border-color: #4e529e;
-    background-color: white;
-}
-.vate{
-    margin: 0.2%;
-    width: 234px;
-    height: 54px;
-    border: 2px solid #25274d;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    outline: none;
-    background-color: white;
-    border-color: #4e529e;
-}
-h6{
-    height: 5px;
-    font-family: sans-serif;
-    font-style: normal;
+    height: 54px; 
+    display: block;  
+    margin: 2em auto;
+    border: 1px solid #4E529E;
     font-weight: 600;
     font-size: 20px;
-    color: #25274d;
-}
-.text-me{
-    width: 271px;
-    height: 66px;
-    font-size: 110%;
-    background: white;
-    border: 2px solid rgba(37, 39, 77, 0.22);
-    box-sizing: border-box;
-    border-radius: 50px;
-    outline: none;
-}
-p, .catalog-link{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    color: #25274d;
-    line-height: 22px;
+    line-height: 24px;
     text-align: center;
+    color: #25274D;
+    background: #FFF;
 }
-.novate{
+.option-no{
     width: 234px;
-    height: 49px;
-    line-height: 49px;
-    text-decoration: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    outline: none;
-    font-family: 'Montserrat', sans-serif;
-    background-color:#25274d;
+    height: 54px;
     display: block;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: white;
-    border-color: #4e529e;
-    border: none;
-    cursor: pointer;
+    margin: 2em auto;  
+    border: 1px solid #4E529E;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #25274D;
+    background: #FFF;
 }
-.ate:focus{
- background-color: #25274d;
- color: #fff;
- border: none;
+.option-yes:focus{
+    outline: none;
 }
-.vate:focus{
-    background-color: #25274d;
-    color: white;
-    color: #fff;
- border: none;
+.option-no:focus{
+    outline: none;
 }
-.novate:hover{
-    background-color: #4e529e;
+select{
+    width: 234px;
+    margin: 1em auto;
+    display: block;
+    font-size: 1.11rem;
+    padding: 1em 1.2em;
+    display: none;
 }
 
-/*Media Queries*/
-@media screen and (max-width: 480px)
-{
-    h3{
-        height: 30px;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        color: #25274d;
-        text-align: center;
-    }
-    h5{
-        height: 10px;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        color: #25274d;
-        text-align: center;
-    }
-    h6{
-        height: 1px;
-    }
-    .ate{
-        margin-bottom: 5%;
-    }
-    .text-me{
-        height: 49px;
-    }
-    p, .catalog-link{
-        font-size: 97%;
-        font-weight: normal;
-    }
+
+
+
+
+.catalog-link{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #25274D;
+}
+#next-btn{
+    display: block;
+    margin: 1em auto;
+    width: 234px;
+    height: 49px;
+    background: #25274D;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: #FFF;
+    border: 1px solid #25274D;
+}
+#next-btn:focus, #next-btn:active{
+    outline: none;
+}
+#next-btn:hover{
+    background-color: #131531;
+}
+#option-selected, #error-text{
+    color: #009238;
+    margin: 1.5em;
+    text-align: center;
 }

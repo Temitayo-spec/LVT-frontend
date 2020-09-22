@@ -1,36 +1,88 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Students Sign up</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student | Learnovate</title>
+        <link rel="shortcut icon" href="./images/favicon updated.jpg" type="image/x-icon">
+         <!-- Required meta tags always come first -->
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/student_signup_0.css">
     </head>
-    <body id="student">
-        <div class="content">
-            <form>
-                <header style="margin-top: 2%;" class="text-center "><img src="images/lv 3 1.png" alt="Learnovate Logo" class="img-fluid"></header>
-                <h3>Welcome, lets get you started</h3>
-                <h5>Are you joining a tutorial ?</h5>
-                <br/>
-                <button type="button" class="ate" name="button" onclick="YesClick()">Yes</button>
-                <br/>
-                <button type="button" class="vate" name="button" onclick="NoClick()">No</button>
+    <body>
+
+        <main> 
+            <span>
+                <img src="images/lv31.png" class="img-fluid" alt="Learnovate Logo">
+            </span>
+            <!-- Main Header -->
+            <header class="main-header">Welcome, let's get you started</header>
 
 
-                <span id="tutorialCodeField">
+            <img src="images/Ellipse 11.svg" alt="Blue Ellipse" class="img-fluid mobile-ellipse">
+            <!-- Sub Header -->
+            <header class="sub-header">Are you joining a tutorial?</header>
 
-                    <h6>Enter Tutorial code</h6>
-                    <p class="error"></p>
-                    <input type="text" class="text-me" id="tutorialCode">
-                    <p>Searching for a tutorial? <a href="#" class="catalog-link">Browse through our catalog</a></p>
-                </span>
-                <a href="student_signup_1.html" class="novate">Next</a>
-                <!-- <button type="submit" class="novate" name="button">Next</button> -->
+            <!-- Options(Yes or No) -->
+            <button class="option-yes">Yes</button>
+            <button class="option-no">No</button>
+            <img src="images/Ellipse 12.svg" alt="Yellow Ellipse" class="img-fluid desktop-ellipse-yellow">
+
+
+                <select name="" id="select-tutorial">
+                    <option value="">--Select a Tutorial--</option>
+                    <option value="">Demo Tutorials</option>
+                    <option value="">Demo Tutorials</option>
+                    <option value="">Demo Tutorials</option>
+                    <option value="">Demo Tutorials</option>
+                    <option value="">Demo Tutorials</option>
+                    <option value="">Demo Tutorials</option>
+                </select>
+            <img src="images/Ellipse 14.svg" alt="Blue Ellipse" class="img-fluid desktop-ellipse-blue">
+
+
+            <!-- Catalog Link -->
+            <a href="student_signup_0.html" class="catalog-link">Searching for a tutorial? Browse through our catalog</a>
+
+
+            <p id="option-selected"></p>
+
+            <p id="error-text"></p>
+
+            <!-- Next Button -->
+            <button id="next-btn">Next</button>
+
+
+        </main>
+
+
+
+
+         <!-- The code above is for the purpose of the layout. This form below sends info to our servers. It won't be displayed to the user. -->
+         <div class="active-form d-none text-center bg-dark text-white mt-5">
+            <form action="" method="post">
+                <br>
+                <!-- Student -->
+                <label for="student">Yes</label>
+                <input type="radio" name="tutorialoption" id="yes-active-form">
+
+                <br>
+
+                <!-- Educator -->
+                <label for="educator">No</label>
+                <input type="radio" name="tutorialoption" id="no-active-form">
+
+                <!-- Submit -->
+                <input type="submit" value="Next">
             </form>
         </div>
-
-
-    <script src="js/student_signup_0.js" charset="utf-8"></script>
+        
+        <script src="js/student_signup_0.js"></script>
     </body>
 </html>

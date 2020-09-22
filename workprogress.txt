@@ -10,3 +10,16 @@ Changes to be made
 	-educator_signup_0.html
 
 2. Sign up section general layout and background colors
+
+
+
+The final sign in forms still have some accessibility issues. 
+The web.dev link on Kamal's phone is a good guide to fix them.
+For example, the phone inputs need some formatting
+Labels, show password....
+
+
+I just added some "active" forms to some of the pages. Commments explain it all.
+
+
+I need to re-do the landing page
