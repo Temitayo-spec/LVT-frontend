@@ -35,3 +35,26 @@ label.final-form-label{
 #error-text{
     color: rgb(255, 0, 0);
 }
+
+
+/* Ecllipses */
+.desktop-yellow-ellipse{
+    display: none;
+}
+.desktop-blue-ellipse{
+    display: none;
+}
+@media(min-width:800px){
+    .desktop-yellow-ellipse{
+        display: inline;
+        position: absolute;
+        right: 1em;
+        bottom: 9em;
+    }
+    .desktop-blue-ellipse{
+        display: inline;
+        position: absolute;
+        left: 1em;
+        bottom: 15em;
+    }
+}

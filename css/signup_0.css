@@ -26,13 +26,14 @@ header{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    align-content: center;
 }
 .student-button{
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(71, 71, 71, 0.25);
     border-radius: 5px;
     height: 11em;
-    width: 14em;
+    width: 12.6em;
     margin-bottom: 2em;
     margin-top: 2em;
     color: #25274D;
@@ -43,7 +44,7 @@ header{
     box-shadow: 0px 4px 4px rgba(36, 36, 36, 0.25);
     border-radius: 5px;
     height: 11em;
-    width: 14em;
+    width: 12.6em;
     color: #25274D;
     padding-top: 2em;
 }
@@ -81,8 +82,51 @@ p{
     text-align: center;
 }
 
+/* Ellipses */
+.ellipse-test{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.mobile-yellow-ellipse{
+    position: absolute;
+    top: 5em;
+    right: .1em;
+}
+.mobile-blue-ellipse{
+    position: absolute;
+    bottom: 20%;
+    left: .1em;
+}
+/* Media query exist to move the eclllipses closer to the center */
+@media (min-width: 370px){
+    .mobile-yellow-ellipse{
+        position: absolute;
+        top: 5em;
+        right: .8em;
+    }
+    .mobile-blue-ellipse{
+        left: 0.8em;
+    }
+      
+}
+.desktop-yellow-ellipse{
+    display: none;
+}
+.desktop-blue-ellipse{
+    display: none;
+}
+@media (max-width: 312px){ /*Media query exist because the ellipses will overlap the buttons*/
+    .mobile-yellow-ellipse{
+        display: none;
+    }
+    .mobile-blue-ellipse{
+        display: none;
+    }
+}
 
-@media (min-width: 700px){
+@media (min-width: 550px){
     .button-container{
         justify-content: center;
         flex-direction: row;
@@ -92,5 +136,38 @@ p{
     }
     .educator-button{
         margin-right: 2.5em;
+    }
+    .mobile-yellow-ellipse{
+        display: none;
+    }
+    .mobile-blue-ellipse{
+        display: none;
+    }
+    .desktop-yellow-ellipse{
+        display: inline;
+        position: absolute;
+        top: 0;
+        left: 4em;
+    }
+    .desktop-blue-ellipse{
+        display: inline;
+        position: absolute;
+        bottom: -2em;
+        right: 25%;
+    }
+    
+}
+
+/* Media query exist to pull it closer on larger screens */
+@media (min-width: 1200px){
+    .desktop-yellow-ellipse{
+        left: 9em;
+    }
+}
+
+/* Media query exist to stop the overlapping */
+@media (max-width: 820px){
+    .desktop-yellow-ellipse{
+        display: none;
     }
 }
