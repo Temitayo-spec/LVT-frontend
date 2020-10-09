@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="LVT.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.0-web/css/all.css">
+    <link rel="stylesheet" href="resources.css">
+    <title>Resources</title>
+</head>
+<body>
+    <!--Whole Container starts-->
+
+    <!--The check input is used for the sidbar but it is hidden-->
+    <div id="wrapper">
+        <input type="checkbox" id="check">
+        <!--check input ends-->
+
+        <!--sidebar start-->
+        <div class="sidebar">
+            <label for="check">
+                <i class="fas fa-bars" id="sidebar_btn"></i>
+            </label>
+            <center>
+                <h1>Learnovate</h1>
+            </center>
+            <a href="/profile.html"><i class="far fa-user"></i><span>Profile</span></a>
+            <a href="/submission.html"><i class="fas fa-clipboard-list"></i><span>Submissions</span></a>
+            <a href="/resources.html" class="sources"><i class="fas fa-upload"></i><span>Resources</span></a>
+            <a href="/discussion.html"><i class="fas fa-comments"></i><span>Discussion Forum</span></a>
+            <a href="/LVT2.html" class="tts"><i class="fas fa-tasks"></i><span>Courses</span></a>
+        </div>
+
+        <div id="content">
+            <div class="top-area">
+                <header>
+                    <div class="left_area">
+                        <h3>Resources</h3>
+                    </div>
+                    <div class="right_area">
+                        <a href="#"><i class="far fa-bell"></i></a>
+                    </div>        
+                </header>
+            </div>    
+            <br>
+            <!--Modal Popup Button starts-->
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" id="add"><i class="fas fa-plus"></i>Upload a resource</button>
+            <!--End Modal Button-->
+
+            <!--UI displayed input starts-->
+
+                <div class="display-resource">
+                    <ul class="display-list"></ul>
+                </div>
+            <!--UI displayed input starts-->
+        </div>
+        <!--content ends-->
+
+        <!--Modal start-->
+        <form id="my-form">
+            <div class="modal-bg">
+                <div id="modal" class="modal-intro">
+                    <header>
+                        <h2>Add a resource</h2>
+                    </header>
+
+                    <div class="msg"></div>
+
+                    <div class="title">
+                        <label>Title</label>
+                        <input type="text" id="resource-title">
+                    </div>
+                
+                    
+                        <div class="categories">
+                            <label id="category_label">Category</label>
+                            <input type="text" id="categ">
+                        </div>
+                    
+                    <div class="description">
+                        <label>Type</label>
+                        <input type="text" id="type">
+                    </div>
+                    <button type="submit" id="add-btn">Add</button>
+                    <span class="modal-close">X</span>
+                </div>
+        </form>
+        <!--Modal Ends-->
+
+    <script defer src="resources.js"></script>
+</body>
+</html>

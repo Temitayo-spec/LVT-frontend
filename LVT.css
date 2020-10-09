@@ -1,0 +1,380 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E5E5;
+}
+/*heading*/
+.left_area h3{
+    font-size: 22px;
+}
+
+/*Sidebar Area*/
+.sidebar{
+    top: 0px;
+    background: #25274D;
+    border-radius: 5px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar h1{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    padding-bottom: 10px;
+}
+
+.sidebar a{
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a.active{
+    background-color: #fff;
+    color: #25274D;
+}
+
+.sidebar a:hover{
+    background: #1E1F3C;
+}
+
+.sidebar i{
+    padding-right: 10px;
+}
+
+/*The Hamburger Button*/
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    left: 10px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color: #1E1F3C;
+}
+
+/*Moving in and out of the sidebar*/
+#check:checked ~ .sidebar{
+    left: -210px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 180px;
+    width: 70px;
+}
+
+/*The main content of the page*/
+#content{
+    margin-top: 30px;
+    margin-left: 60px;
+    transition: 0.5s;
+}
+
+#check:checked ~ #content{
+    margin-left: 60px;
+}
+
+#check{
+    display: none;
+}
+
+/*The displayed input styles*/
+.items{
+    margin: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 1em;
+}
+
+/*The notification area*/
+.right_area{
+    float: right;
+    margin-top: -40px;
+}
+
+.right_area a i{
+    font-size: 20px;
+    padding: 0.5em;
+}
+
+/*The header that contains the heading and the bell icon*/
+header{
+    border-bottom: 1px solid #25274D;
+}
+
+/*The Button that triggers the modal*/
+button{
+
+    padding: 1em;
+    width: 40%;
+    background-color: #fff;
+    border: 1px solid #25274D;
+}
+/*The button icon*/
+button i{
+    margin-right: 5px;
+}
+/*The Main Modal*/
+.modal-intro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    background-color: #E5E5E5;
+    width: 30%;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
+    height: 500px;
+    justify-content: flex-start;
+    justify-content: center;
+}
+
+.modal-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-close{
+    position: absolute;
+    color: #25274D;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*The title input*/
+.title label{
+    display: block;
+    font-size: 1.5em;
+    color: #25274D;
+}
+
+.title  input{
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 10px;
+}
+
+/*second part div*/
+.second-portions{
+    display: flex;
+    flex-direction: row;
+}
+
+/*category input*/
+.categories label{
+    display: inline-block;
+    font-size: 17px;
+    color: #25274D;
+}
+
+.categories input{
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+/*level input*/
+.levels label{
+    display: inline-block;
+    font-size: 17px;
+    color: #25274D;
+    margin-left: 1em;
+}
+
+.levels input{
+    display: block;
+    width: 90%;
+    padding: 1em;
+    margin-bottom: 20px;
+    margin-left: 1.2em;
+}
+
+/*description textarea*/
+.description label{
+    display: block;
+    font-size: 17px;
+}
+
+.description textarea{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+/*THE SUBMIT BUTTON*/
+#add-it{
+    align-self: flex-end;
+    margin-right: 0%;
+    width: 100px;
+    background-color: #25274D;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/*The delete input button*/
+.fa-trash-alt{
+    color: #25274D;
+    margin-right: 4px;
+    pointer-events: none;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 700px){
+
+    .sidebar{
+        transition: 0.5s;
+        transition-property: left;
+    }
+    .modal-intro{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 430px){
+
+    .sidebar{
+        transition: 0.5s;
+        transition-property: left;
+    }
+
+    
+    .modal-intro{
+        width: 300px;
+    }
+
+    #add-it{
+        margin-right: 0%;
+    }
+
+    .top-area{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content{
+        margin-left: 0px;
+        padding: 20px;
+        transition: 0.5s;
+        margin-top: 40px;
+        
+    }
+    #check:checked ~ #content{
+        margin-left: 0px;
+    }
+
+    #sidebar_btn:hover{
+        color: #25274D;
+    }
+
+    #check:checked ~ .sidebar{
+        left: -250px;
+        
+    }
+
+    #check:checked ~ .sidebar_btn{
+        display: block;
+    }
+
+    button{
+
+        padding: 1em;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #25274D;
+    }
+
+    button i{
+        margin-right: 5px;
+    }
+
+    header{
+        border-bottom: 1px solid #25274D;
+    }
+
+    h3{
+        text-align: center;
+        justify-self: center;
+
+    }
+
+    .right_area{
+        float: right;
+        margin-top: -30px;
+    }
+
+    .right_area a i{
+        font-size: 20px;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 1em;
+    }
+
+    label #sidebar_btn{
+        color: #25274D;
+    }
+
+    label #sidebar_btn:active{
+        color: #fff;
+    }
+}
+/*MEDIA QUERIES ENDS*/
+
+/*OMO MY EYES DON REDDDDDDD, ahhhhhh*/
