@@ -163,6 +163,11 @@ button i{
     justify-content: center;
 }
 
+#modal header{
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
 .modal-bg{
     position: fixed;
     top: 0;

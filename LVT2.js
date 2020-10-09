@@ -50,7 +50,7 @@ class UI{
             <td>${input.course}</td>
             <td class="middle">${input.category}</td>
             <td class="right">${input.level}</td>
-            <td><a href="#" class="btn btn-primary delete"><span><i class="fas fa-trash-alt"></i></span>Remove</a></td>
+            <td><a href="#" class="btn btn-primary delete"><span><i class="fa fa-trash-o"></i></span>Remove</a></td>
         `;
         list.appendChild(row);
     }

@@ -56,7 +56,7 @@ function add(e) {
 
     //DELETE Button
     const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = '<i class="fas fa-trash"></i>'
+    deleteButton.innerHTML = '<i class="fa fa-trash-o"></i>'
 
     deleteButton.classList.add('delete-btn');
     resourceDiv.appendChild(deleteButton);
